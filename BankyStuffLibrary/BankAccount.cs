@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Text;
 
-namespace MySuperBank
+namespace BankyStuffLibrary
 {
-	class BankAccount
+	public class BankAccount
 	{
 		public string Number { get; }
 		public string Owner { get; set; }
@@ -64,7 +64,7 @@ namespace MySuperBank
 			report.AppendLine("Date\t\tAmmont\tNote");
 			foreach (var item in allTransactions) 
 			{
-				report.AppendLine($"{item.Date.ToShortDateString()}\t{item.Amount}\t{item.Notes}");
+				report.AppendLine($"{item.Date.ToShortDateString()}\t{item.AmountForHumans}\t{item.Notes}");
 			}
 			return report.ToString();
 		}
