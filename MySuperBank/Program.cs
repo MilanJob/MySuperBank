@@ -28,20 +28,6 @@ namespace MySuperBank
 			account.MakeWithdrawal(456, DateTime.Now, "SSD");
 			account.MakeWithdrawal(123, DateTime.Now, "Power");
 
-
-
-			//// Test that the initial balances must be positive.
-			//try
-			//{
-			//	var invalidAccount = new BankAccount("invalid", -55);
-			//}
-			//catch (ArgumentOutOfRangeException e)
-			//{
-			//	Console.WriteLine("Exception caught creating account with negative balance");
-			//	Console.WriteLine(e.ToString());
-			//}
-
-
 			Console.WriteLine(account.GetAccountHistory());
 
 		}
