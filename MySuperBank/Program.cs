@@ -26,7 +26,7 @@ namespace MySuperBank
 			account.MakeDeposit(50, DateTime.Now, "Xbox Game");
 			account.MakeDeposit(250, DateTime.Now, "Hard Disk");
 			account.MakeWithdrawal(456, DateTime.Now, "SSD");
-			account.MakeWithdrawal(123, DateTime.Now, "Power");
+			account.MakeWithdrawal(123, DateTime.Now, "PowerSupply");
 
 			Console.WriteLine(account.GetAccountHistory());
 
